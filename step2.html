@@ -1,0 +1,111 @@
+<html>
+   
+   <style>
+       .button{
+           text-align: center;
+           padding: 10px
+       }
+    </style>
+    
+    <title>Stage 02</title>
+    <h2>Passport Application Stage-02</h2>
+    <h3>Online Application ID: </h3>
+    <p>Fields marked with <a style="color: red">(*)</a> are mandatory</p>
+    <hr>
+    <body>
+       <form action="Step2Validation.php" method="post">
+           
+        <table border="1" style="width: 80%" align="center">
+            <tr>
+                <td>
+                <pre>
+                
+                <h3>Applicant Contact Information</h3>
+                
+                Office No:       <input type="text" name="on" Value="">
+                
+                Recidence No:    <input type="text" name="rn" Value="">
+                
+                Mobile No:       <input type="text" name="mn" Value="">
+                
+                <h3>Emergency Contact Person's Details</h3>
+                
+                Name : <a style="color: red">*</a>         <input type="text" name="ename" Value="">
+                
+                Country : <a style="color: red">*</a>      <select name="ecountry">
+                                                              <option value="Bangladesh">Bangladesh</option>
+                                                              <option value="India">India</option>
+                                                              <option value="Pakistan">Pakistan</option>
+                                                              <option value="SriLanka">SriLanka</option>
+                                                            </select>
+                                                            
+                <input type="checkbox" name="sap" value="sap1"> Same as Permanent Address
+                
+                <input type="checkbox" name="sap" value="sap2"> Same as Present Address
+                
+                Village/House :      <input type="text" name="house1" value=""> 
+                
+                Road/Block/Sector :  <input type="text" name="road1" value="">
+                
+                District : <a style="color: red">*</a>     <select name="district1">
+                                                              <option value="dhaka">dhaka</option>
+                                                              <option value="khulna">khulna</option>
+                                                              <option value="barishal">barishal</option>
+                                                              <option value="jessore">jessore</option>
+                                                            </select>
+                          
+                Police 
+                Station : <a style="color: red">*</a>      <input type="text" name="Ppst1" Value="">
+                
+                Post Office : <a style="color: red">*</a>  <input type="text" name="Ppo1" Value="">
+                
+                Contact No : <a style="color: red">*</a>   <input type="text" name="cn" value="">
+                
+                Email :          <input type="text" name="em" value="">
+                
+                Relationship : <a style="color: red">*</a> <select name="relationship">
+                                                              <option value="Mother">Mother</option>
+                                                              <option value="Father">Father</option>
+                                                              <option value="Sister">Sister</option>
+                                                              <option value="Brother">Brother</option>
+                                                            </select>
+                
+                </pre>
+                
+                </td>
+            
+                <td>
+                <pre>
+                
+                Old Passport :    <input type="text" name="op" value="">
+                
+                Place Of Issue :  <input type="text" name="poi" value="">
+                
+                Date Of Issue :   <input type="text" name="doi" value="">
+                
+                Re-Issue Reason : <a style="color: red">*</a>  <select name="rir">
+                                                              <option value="Passport_Lost">Passport Lost</option>
+                                                              <option value="Passport_date_Expired">Passport date Expired</option>
+                                                              <option value="Other">Other</option>
+                                                              
+                                                            </select>
+                
+                
+                       
+                </pre>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div align="center">
+           
+            <input class="button" type="submit" name="submit" value="Save & Continue">
+            
+        </div>
+        
+      </form> 
+        <form action="step1.html" method="post">
+            <input align="center" class="button" type="submit" name="submit" value="Previous Page">
+        </form>
+    </body>
+</html>

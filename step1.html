@@ -1,0 +1,211 @@
+<html>
+   
+   <style>
+       .button{
+           text-align: center;
+           padding: 10px
+       }
+    </style>
+    
+    <title>Stage 01</title>
+    <h2>Passport Application Stage-01</h2>
+    <p>Fields marked with <a style="color: red">(*)</a> are mandatory</p>
+    <hr>
+    <body>
+       <form action="Step1Validation.php" method="post">
+        <table border="1" style="width: 80%" align="center">
+            <tr>
+                <td>
+                <pre>
+                
+                <h3>Passport Application Information</h3>
+                
+                Applying in: <a style="color: red">*</a>   <select name="nationality">
+                                                              <option value="Bangladesh">Bangladesh</option>
+                                                              <option value="India">India</option>
+                                                              <option value="Pakistan">Pakistan</option>
+                                                              <option value="SriLanka">SriLanka</option>
+                                                            </select>
+                
+                Application Type: <strong>NEW APPLICATION</strong>
+                
+                Passport Type: <a style="color: red">*</a>  <select>
+                                                              <option value="New">New</option>
+                                                              <option value="Renew">Re-New</option>
+                                                            </select>
+                                                            
+                Delivery Type: <input type="radio" name="DeliType" value="Regular" checked>Regular<br>
+                               <input type="radio" name="DeliType" value="Express">Express<br>
+                
+                <h3>Personal Information</h3>
+                
+                Name of applicant: <a style="color: red">*</a> <input type="text" name="name" Value="">
+                
+                First Name: <a style="color: red">*</a>        <input type="text" name="fname" Value="">
+                
+                Last Name: <a style="color: red">*</a>         <input type="text" name="lname" Value="">
+                
+                Guardian <input type="checkbox" name="guardian" value="guardian"><a style="color: red">"Tick"</a> only if Applicant is legally adapted          
+                
+                Father's Name: <a style="color: red">*</a>     <input type="text" name="fatherName" Value="">
+                
+                Father's 
+                Nationality: <a style="color: red">*</a>       <select name="fnationality">
+                                                              <option value="Bangladesh">Bangladesh</option>
+                                                              <option value="India">India</option>
+                                                              <option value="Pakistan">Pakistan</option>
+                                                              <option value="SriLanka">SriLanka</option>
+                                                            </select>
+                
+                Father's 
+                Profession : <a style="color: red">*</a>       <input type="text" name="fprofession" Value="">
+                
+                Mother's Name: <a style="color: red">*</a>     <input type="text" name="motherName" Value="">
+                
+                Mother's 
+                Nationality: <a style="color: red">*</a>       <select name="mnationality">
+                                                              <option value="Bangladesh">Bangladesh</option>
+                                                              <option value="India">India</option>
+                                                              <option value="Pakistan">Pakistan</option>
+                                                              <option value="SriLanka">SriLanka</option>
+                                                            </select>
+                
+                Mother's 
+                Profession : <a style="color: red">*</a>       <input type="text" name="mprofession" Value="">
+                
+                Spouse's Name:       <input type="text" name="SpouseName" Value="">
+                
+                Spouse's 
+                Nationality:         <select name="snationality">
+                                                              <option value="Bangladesh">Bangladesh</option>
+                                                              <option value="India">India</option>
+                                                              <option value="Pakistan">Pakistan</option>
+                                                              <option value="SriLanka">SriLanka</option>
+                                                            </select>
+                
+                Spouse's 
+                Profession :         <input type="text" name="sprofession" Value="">
+                
+                
+                Marital Status: <a style="color: red">*</a>   <select name="Marital">
+                                                              <option value="Maried">Maried</option>
+                                                              <option value="Single">Single</option>
+                                                           
+                                                            </select>
+                                                            
+                Applicant's 
+                Profession : <a style="color: red">*</a>     <input type="text" name="aprofession" Value="">     
+                                                           
+                Country
+                of birth: <a style="color: red">*</a>         <select name="cob">
+                                                              <option value="Bangladesh">Bangladesh</option>
+                                                              <option value="India">India</option>
+                                                              <option value="Pakistan">Pakistan</option>
+                                                              <option value="SriLanka">SriLanka</option>
+                                                            </select>  
+                
+                Birth District:<a style="color: red">*</a>    <select name="bdistrict">
+                                                              <option value="dhaka">dhaka</option>
+                                                              <option value="khulna">khulna</option>
+                                                              <option value="barishal">barishal</option>
+                                                              <option value="jessore">jessore</option>
+                                                            </select>
+                
+                </pre>
+                
+                </td>
+            
+                <td>
+                <pre>
+                
+                Date Of Birth : <a style="color: red">*</a>  <input type="text" name="DOB" value="">      
+                
+                Gender :<a style="color: red">*</a>          <input type="radio" name="gender" value="Male" checked>Male<br>
+                                  <input type="radio" name="gender" value="Female">Female<br>
+                                  <input type="radio" name="gender" value="Others">Others<br>
+                                  
+                Birth ID No. : <a style="color: red">*</a>   <input type="text" name="Bid" value=""> 
+                
+                National ID No. :  <input type="text" name="Nid" value=""> 
+                
+                Tax ID No. :       <input type="text" name="tin" value="">
+                
+                Height : <a style="color: red">*</a>         <input type="text" name="hcm" value=""> cm 
+                
+                Religion : <a style="color: red">*</a>       <select name="religion">
+                                                              <option value="Muslim">Muslim</option>
+                                                              <option value="hindu">hindu</option>
+                                                              <option value="buddhish">buddhish</option>
+                                                              <option value="Christian">Christian</option>
+                                                            </select> 
+               
+                Email : <a style="color: red">*</a>          <input type="text" name="em" value="">
+                
+                <h3>Citizenship Information</h3>
+                
+                Nationality : <a style="color: red">*</a>     <select name="nationality">
+                                                              <option value="Bangladishi">Bangladishi</option>
+                                                              <option value="Indian">Indian</option>
+                                                              <option value="Srilankan">Srilankan</option>
+                                                              <option value="Chinese">Chinese</option>
+                                                            </select> 
+                
+                Citizenship 
+                Status : <a style="color: red">*</a>          <select name="cst">
+                                                              <option value="Birth">Birth</option>
+                                                              <option value="By_Father">By Father</option>
+                                                              <option value="By_Stay">By Stay</option>
+                                                            </select> 
+                
+                Dual Citizenship : <a style="color: red">*</a><input type="radio" name="yes" value="Yes" checked>Male<br>
+                                    <input type="radio" name="no" value="No">Female<br>
+                                                                     
+                <h3>Present Address</h3>
+                
+                Village/House :      <input type="text" name="house" value=""> 
+                
+                Road/Block/Sector :  <input type="text" name="road" value="">
+                
+                District : <a style="color: red">*</a>         <select name="district">
+                                                              <option value="dhaka">dhaka</option>
+                                                              <option value="khulna">khulna</option>
+                                                              <option value="barishal">barishal</option>
+                                                              <option value="jessore">jessore</option>
+                                                            </select>
+                          
+                Police Station : <a style="color: red">*</a>   <input type="text" name="PRpst" Value="">
+                
+                Post Office : <a style="color: red">*</a>      <input type="text" name="PRpo" Value="">
+                      
+                <h3>Permanent Address</h3>
+                
+                <input type="checkbox" name="sap" value="sap"> Same as Above
+                
+                Village/House :      <input type="text" name="house" value=""> 
+                
+                Road/Block/Sector :  <input type="text" name="road" value="">
+                
+                District : <a style="color: red">*</a>         <select name="district">
+                                                              <option value="dhaka">dhaka</option>
+                                                              <option value="khulna">khulna</option>
+                                                              <option value="barishal">barishal</option>
+                                                              <option value="jessore">jessore</option>
+                                                            </select>
+                          
+                Police Station : <a style="color: red">*</a>   <input type="text" name="Ppst" Value="">
+                
+                Post Office : <a style="color: red">*</a>      <input type="text" name="Ppo" Value="">
+                       
+                </pre>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div align="center">
+            <input class="button" type="submit" name="submit" value="Save & Continue">    
+        </div>
+        
+        <br><br>
+      </form>  
+    </body>
+</html>

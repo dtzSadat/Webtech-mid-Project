@@ -1,0 +1,68 @@
+<html>
+   
+   <style>
+       .button{
+           text-align: center;
+           padding: 10px
+       }
+    </style>
+    
+    <title>Stage 03</title>
+    <h2>Passport Application Stage-03</h2>
+    <h3>Online Application ID: </h3>
+    <p>Fields marked with <a style="color: red">(*)</a> are mandatory</p>
+    <hr>
+    <body>
+       <form action="Step3Validation.php" method="post">
+        <table border="1" style="width: 80%" align="center">
+            <tr>
+                <td>
+                <pre>
+                
+                <h3>Payment Information</h3>
+                
+                Payment Type : <input type="radio" name="payment" value="Online" checked>Online<br>
+                               <input type="radio" name="payment" value="Non-Online">Non-Online<br>
+                               
+                <input type="checkbox" name="sap" value="skp"> Skip Payment  
+                
+                Amount : <a style="color: red">*</a>   <select name="amt">
+                                                    <option value="BDT">BDT</option>
+                                                    <option value="USD">USD</option>
+                                                            </select> <input type="text" size="8" name="amount" Value="">
+                
+                Date Of Payment : <a style="color: red">*</a>  <input type="text" name="dop" Value="">
+                
+                Receipt No : <a style="color: red">*</a>       <input type="text" name="rn" Value=""> 
+                
+                Name of Bank :              <select name="bank">
+                                                    <option value="Bangladesh Bank">Bangladesh Bank</option>
+                                                    <option value="brac">BRAC</option>
+                                                            </select>
+                
+                Name Of Branch :     <input type="text" name="nob" Value=""> 
+                
+                </pre>
+                
+                </td>
+            
+                <td>
+                <pre>
+                
+                       
+                </pre>
+                </td>
+            </tr>
+        </table>
+        <br><br>
+        <div align="center">
+            <input class="button" type="submit" name="submit" value="Save & Continue">    
+        </div>
+        
+        <br><br>
+      </form>  
+        <form action="step2.html" method="post">
+            <input class="button" type="submit" name="submit" value="Previous Page">
+        </form>
+    </body>
+</html>
